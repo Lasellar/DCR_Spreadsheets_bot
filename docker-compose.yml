@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    image: lasellar/dcr_spreadsheets_bot:latest
+    restart: unless-stopped
+    env_file:
+      - .env
